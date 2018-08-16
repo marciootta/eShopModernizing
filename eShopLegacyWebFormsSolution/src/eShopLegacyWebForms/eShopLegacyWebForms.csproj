@@ -172,10 +172,14 @@
     <Content Include="fonts\Montserrat-Regular.ttf" />
     <Content Include="fonts\Montserrat-Regular.woff" />
     <Content Include="fonts\Montserrat-Regular.woff2" />
-    <None Include="Dockerfile" />
+    <None Include="Dockerfile">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include=".dockerignore">
       <DependentUpon>Dockerfile</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="images\brand.png" />
     <Content Include="images\brand_dark.png" />
